@@ -1,0 +1,19 @@
+[project]
+name = "balm-tsf"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "deepspeed==0.14.0",
+    "einops==0.7.0",
+    "matplotlib==3.7.0",
+    "pandas==1.5.3",
+    "peft==0.4.0",
+    "scikit-learn==1.2.2",
+    "sentencepiece==0.2.0",
+    "wandb==0.18.6",
+]
+
+[tool.ruff.lint.isort]
+known-third-party = ["wandb"]
