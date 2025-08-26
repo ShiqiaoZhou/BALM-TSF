@@ -4,7 +4,7 @@
 
 ## Introduction
 
-BALM-TSF (Balanced Multimodal Alignment for LLM-Based Time Series Forecasting) is a lightweight time series forecasting framework that balances textual prompts and time series. 
+BALM-TSF (Balanced Multimodal Alignment for LLM-Based Time Series Forecasting) is a time series forecasting framework with lightweight alignment module. It aims to mitigate the modality imbalance issue between text and time series.
 
 <p align="center">
 <img src="./figs/framework.png" height = "360" alt="" align=center />
@@ -29,6 +29,7 @@ Download the pre-processed datasets from [Google Drive](https://drive.google.com
 
 1. Download and unzip datasets into `./dataset`.
 2. Tune the model using the provided scripts.
+3. The training and test results will be visualized and recorded via Wandb.
 
 ### Long-term Forecasting
 
