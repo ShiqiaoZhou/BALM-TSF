@@ -16,7 +16,7 @@ via statistical + learnable prompts and a balanced alignment module (scaling + c
 
 * Model Structure:
 <p align="center">
-<img src="./figs/framework.png" height = "360
+<img src="./figs/framework.png" height = "300
 " alt="" align=center />
 </p>
 
