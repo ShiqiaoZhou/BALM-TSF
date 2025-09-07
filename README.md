@@ -5,17 +5,19 @@
 ## Introduction
 
 Official PyTorch implementation of [BALM-TSF (CIKM 2025)](https://arxiv.org/abs/2509.00622).  
+
 BALM-TSF is a lightweight framework that alleviates **modality imbalance** between text and time series 
 via statistical + learnable prompts and a balanced alignment module (scaling + contrastive learning).
 
-* Modality Imbalance:
+* Modality Imbalance Issue:
 <p align="center">
 <img src="./figs/MI.png" height = "360" alt="" align=center />
 </p>
 
 * Model Structure:
 <p align="center">
-<img src="./figs/framework.png" height = "360" alt="" align=center />
+<img src="./figs/framework.png" height = "600
+" alt="" align=center />
 </p>
 
 ## Long-term Forecasting Results
@@ -55,9 +57,9 @@ bash ./scripts_long_term/BALM_ETTh1_GPT2.sh
 bash ./scripts_few_shot/BALM_ETTh1_GPT2.sh
 ```
 
-## Model Design
+## Acknowledgements
 
-See `models/BALM.py` for implementation details.
+We appreciate [Time-Series-Library](https://github.com/thuml/Time-Series-Library) and [Time-LLM](https://github.com/KimMeen/Time-LLM) for code references and datasets.
 
 ## Citation
 
@@ -70,7 +72,3 @@ If you find this repository useful, please consider citing our work:
   journal={arXiv preprint arXiv:2509.00622},
   year={2025}
 }
-
-## Acknowledgements
-
-We appreciate [Time-Series-Library](https://github.com/thuml/Time-Series-Library) and [Time-LLM](https://github.com/KimMeen/Time-LLM) for code references and datasets.
