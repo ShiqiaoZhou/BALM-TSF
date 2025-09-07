@@ -16,14 +16,14 @@ via statistical + learnable prompts and a balanced alignment module (scaling + c
 
 * Model Structure:
 <p align="center">
-<img src="./figs/framework.png" height = "600
+<img src="./figs/framework.png" height = "360
 " alt="" align=center />
 </p>
 
 ## Long-term Forecasting Results
 
 <p align="center">
-<img src="./figs/table1.png" height = "360" alt="" align=center />
+<img src="./figs/table1.png" height = "600" alt="" align=center />
 </p>
 
 ## Requirements
