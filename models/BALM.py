@@ -264,7 +264,7 @@ class Model(nn.Module):
 
         Learn_prompt = self.learnable_prompt.unsqueeze(0).repeat(batch_size, 1, 1)
         prompt_embeddings_all = torch.cat([Learn_prompt, prompt_embeddings], dim=1)
-        # Rest of processing remains the same
+        
         llama_enc_out = prompt_embeddings_all
 
         dec_out = self.llm_model(inputs_embeds=llama_enc_out)
@@ -290,6 +290,7 @@ class Model(nn.Module):
 
         dec_out = dec_out / scale_factor
 
+        # contrastive learning
         infonce_loss = self.LearnableTemperatureInfoNCELoss(TS, dec_out)
         alignment_loss = self.alignment_weight * infonce_loss
 

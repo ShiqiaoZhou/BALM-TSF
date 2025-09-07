@@ -1,16 +1,28 @@
 <div align="center">
-  <h2><b>(CIKM'25) BALM-TSF: Balanced Multimodal Alignment for LLM-Based Time Series Forecasting</b></h2>
+  <h2><b>(CIKM 2025) BALM-TSF: Balanced Multimodal Alignment for LLM-Based Time Series Forecasting</b></h2>
 </div>
 
 ## Introduction
 
-BALM-TSF (Balanced Multimodal Alignment for LLM-Based Time Series Forecasting) is a time series forecasting framework with lightweight alignment module. It aims to mitigate the modality imbalance issue between text and time series.
+Official PyTorch implementation of [BALM-TSF (CIKM 2025)](https://arxiv.org/abs/2509.00622).  
+BALM-TSF is a lightweight framework that alleviates **modality imbalance** between text and time series 
+via statistical + learnable prompts and a balanced alignment module (scaling + contrastive learning).
 
+* Modality Imbalance:
+<p align="center">
+<img src="./figs/MI.png" height = "360" alt="" align=center />
+</p>
+
+* Model Structure:
 <p align="center">
 <img src="./figs/framework.png" height = "360" alt="" align=center />
 </p>
 
-- BALM-TSF has two branches: (1) the Text Branch constructs a prompt embedding by combining learnable prompt embedding with word-embedded time series statistics, then encodes it with a frozen LLM; (2) the Time Series Branch normalizes raw data, applies a patch encoder, and projects features into the LLM’s hidden space. In the Balanced Alignment module, textual embeddings are rescaled and then aligned with temporal embeddings via a contrastive learning. The aligned two representations are concatenated and fed to a lightweight projection head for final prediction.
+## Long-term Forecasting Results
+
+<p align="center">
+<img src="./figs/table1.png" height = "360" alt="" align=center />
+</p>
 
 ## Requirements
 
@@ -46,6 +58,18 @@ bash ./scripts_few_shot/BALM_ETTh1_GPT2.sh
 ## Model Design
 
 See `models/BALM.py` for implementation details.
+
+## Citation
+
+If you find this repository useful, please consider citing our work:
+
+```bibtex
+@article{zhou2025balmtsf,
+  title={BALM-TSF: Balanced Multimodal Alignment for LLM-Based Time Series Forecasting},
+  author={Zhou, Shiqiao and Schöner, Holger and Lyu, Huanbo and Fouché, Edouard and Wang, Shuo},
+  journal={arXiv preprint arXiv:2509.00622},
+  year={2025}
+}
 
 ## Acknowledgements
 

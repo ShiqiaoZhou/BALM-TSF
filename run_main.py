@@ -12,7 +12,7 @@ from torch.optim import lr_scheduler
 from tqdm import tqdm
 
 from data_provider.data_factory import data_provider
-from models import BALM, Autoformer, DLinear
+from models import BALM
 from utils.logger import get_logger
 from utils.tools import (
     EarlyStopping,
@@ -57,8 +57,8 @@ parser.add_argument(
     "--model",
     type=str,
     required=True,
-    default="Autoformer",
-    help="model name, options: [Autoformer, DLinear]",
+    default="BALM",
+    help="model name, options: [BALM]",
 )
 parser.add_argument("--seed", type=int, default=2021, help="random seed")
 
@@ -242,12 +242,7 @@ for ii in range(args.itr):
     vali_data, vali_loader = data_provider(args, "val")
     test_data, test_loader = data_provider(args, "test")
 
-    if args.model == "Autoformer":
-        model = Autoformer.Model(args).float()
-    elif args.model == "DLinear":
-        model = DLinear.Model(args).float()
-    else:
-        model = BALM.Model(args).float()
+    model = BALM.Model(args).float()
 
     path = os.path.join(
         args.checkpoints, setting + "-" + args.model_comment
