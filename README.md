@@ -20,13 +20,13 @@ via statistical + learnable prompts and a balanced alignment module (scaling + c
 " alt="" align=center />
 </p>
 
-## Long-term Forecasting Results
+* Long-term Forecasting Results
 
 <p align="center">
 <img src="./figs/table1.png" height = "600" alt="" align=center />
 </p>
 
-## Efficiency Analysis
+* Efficiency Analysis
 
 <p align="center">
 <img src="./figs/table2.png" height = "600" alt="" align=center />
