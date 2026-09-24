@@ -1,5 +1,8 @@
 <div align="center">
   <h2><b>(CIKM 2025) BALM-TSF: Balanced Multimodal Alignment for LLM-Based Time Series Forecasting</b></h2>
+  <a href="https://dl.acm.org/doi/10.1145/3746252.3761278"><img src="https://img.shields.io/badge/CIKM'25-Paper-0085CA.svg?logo=acm&logoColor=white" alt="CIKM'25"></a>
+  <a href="https://arxiv.org/abs/2509.00622"><img src="https://img.shields.io/badge/arXiv-2509.00622-b31b1b.svg?logo=arxiv&logoColor=white" alt="arXiv"></a>
+  <a href="https://mp.weixin.qq.com/s/_7MTBaGtfxL1UMxyqmx_wQ"><img src="https://img.shields.io/badge/微信公众号-中文解读-07C160.svg?logo=wechat&logoColor=white" alt="WeChat"></a>
 </div>
 
 ## Introduction
